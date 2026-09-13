@@ -1,38 +1,40 @@
 # Binus Space — Campus Room Booking Web App
 
-A web-based platform for booking study rooms and facilities across BINUS University campuses, proposed under the **PKM-KC (Program Kreativitas Mahasiswa – Karsa Cipta)** student creativity grant scheme.
+A web-based platform that lets students, lecturers, and facility admins manage campus room bookings — with real-time availability, a centralized approval flow, and automatic double-booking prevention.
 
 ## Context
-- **Type:** PKM-KC Proposal / Individual-authored proposal
-- **My Role:** Authored the proposal — problem framing, system design, and feature scope.
+- **Type:** PKM-KC (Program Kreativitas Mahasiswa – Karsa Cipta) group project
+- **Team:** Muhamad Rifki Perkasa, Aria Rahmatanto Putro, Malvin Yonatan Muliawan, Charly Prayoga
 
 ## Problem Statement
-Finding and booking an available study room or discussion space on campus is often manual and inefficient, relying on physical sign-up sheets or informal WhatsApp coordination. Binus Space proposes a centralized booking system to solve this.
+Room booking at BINUS was largely manual, making it hard to check real-time availability and prone to double-booking. There was also no transparency into approval status once a request was submitted.
 
-## Proposed Features
-- Browse room availability by campus, building, and time slot
-- Book and cancel reservations
-- Admin dashboard for facility management
-- Booking history and notifications
+## Target Users
+- **Students & Lecturers** — submit room booking requests for academic and organizational activities.
+- **Facility Admins** — manage and approve/reject booking requests.
+
+## Features
+1. Check room availability with search & category filters
+2. Book online through a simple multi-step form
+3. Admin dashboard with multi-user login & encrypted passwords
+4. Approval system — approve/reject with reason, with an admin audit trail
+5. Automatic server-side double-booking prevention
+
+## Impact
+- **More efficient** — booking becomes fast and self-service, no manual process
+- **Transparent** — request status and approval history are trackable
+- **No conflicts** — the system automatically prevents double-booking
 
 ## Tech Stack
 | Layer | Technology |
 |---|---|
-| Frontend | React |
-| Backend | Laravel |
-| Database | PostgreSQL |
+| Frontend | React + Vite + Tailwind CSS |
+| Backend | Laravel 12 (REST API) |
+| Database | PostgreSQL / MySQL |
+| Deployment | Vercel (frontend) + Render (backend) |
 
-## Project Structure
-```
-binus-space-room-booking/
-├── frontend/        # React app
-├── backend/         # Laravel API
-├── docs/            # PKM-KC proposal document
-└── README.md
-```
-
-## Status
-This started as a PKM-KC grant proposal. Implementation is in progress — see `docs/` for the full proposal covering problem background, objectives, and system design.
+## Live Demo
+- **Website:** https://binus-space-frontend-1vdvixhsn-rifki-perkasa-s-projects.vercel.app/
 
 ## Getting Started
 ```bash
@@ -46,3 +48,6 @@ cd frontend
 npm install
 npm run dev
 ```
+
+## Notes
+This project was built as part of a PKM-KC student creativity grant proposal for BINUS University, with the full proposal document covering background, objectives, and system design.
