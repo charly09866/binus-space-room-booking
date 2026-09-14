@@ -33,21 +33,15 @@ Room booking at BINUS was largely manual, making it hard to check real-time avai
 | Database | PostgreSQL / MySQL |
 | Deployment | Vercel (frontend) + Render (backend) |
 
+## Team Repositories
+This was a group project. The full source code is hosted in the team's repositories:
+- **Frontend:** github.com/rifkyrp64-debug/binus-space-frontend
+- **Backend:** github.com/rifkyrp64-debug/binus-space-backend
+
+This repo documents the project and holds supporting materials (`docs/` — project slide deck).
+
 ## Live Demo
 - **Website:** https://binus-space-frontend-1vdvixhsn-rifki-perkasa-s-projects.vercel.app/
-
-## Getting Started
-```bash
-# Backend
-cd backend
-composer install
-php artisan serve
-
-# Frontend
-cd frontend
-npm install
-npm run dev
-```
 
 ## Notes
 This project was built as part of a PKM-KC student creativity grant proposal for BINUS University, with the full proposal document covering background, objectives, and system design.
